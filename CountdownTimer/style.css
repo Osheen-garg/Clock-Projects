@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgba(55, 177, 230, 0.652),rgb(220, 117, 165),rgba(55, 177, 230, 0.652));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-shadow: -2px 0px 3px white,2px 0px 3px white,0px -2px 3px white,0px 2px 3px white;
+    color: rgb(20, 18, 18);
+    letter-spacing: 3px;
+
+}
+.countdown{
+    margin-top: 30px;
+    padding: 40px 50px;
+    background-color: rgba(0, 0, 0, 0.218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:15px ;
+    box-shadow:0px 0px 10px rgb(45, 39, 39) ;
+    backdrop-filter: blur(20px);
+}
+.timer{
+    min-width: 100px;
+    max-width: 160px;
+    padding: 25px;
+    margin: 15px;
+    background-color: rgba(186, 180, 180, 0.414);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius:8px;
+    box-shadow: 0px 0px 4px rgb(212, 198, 198);
+    transition: background-color 0.5s ease-in;
+}
+.time{
+    font-size: 50px;
+    text-shadow: 0px 0px 2px rgb(212, 198, 198);
+}
+.status{
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px rgb(212, 198, 198);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.timer:hover{
+    background-color:rgba(0, 0, 0, 0.301) ;
+}
+
+@media screen and (max-width:1024px) {
+    .countdown{
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+    
+    h1{
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    .timer .time{
+        font-size: 30px;
+    }
+    .timer .status{
+        font-size: 15px;
+    }
+}
